@@ -1,0 +1,108 @@
+@import url("https://use.typekit.net/sjx1nye.css");
+
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--preto);
+  font-family: richler-pro-pe, serif;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+header .logo {
+  font-family: bebas-neue-pro;
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-size: 60px;
+  font-weight: 600;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+.filme-principal {
+  font-size: 18px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) 100%),
+    url("../img/sonic.jpg");
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.titulo {
+  font-size: 40px;
+  margin-top: 15%;
+  font-family: bebas-neue-pro;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: var(--preto);
+}
+
+.botao i {
+  margin-right: 8px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carrosel-filmes .owl-carousel .item {
+  cursor: pointer;
+}
